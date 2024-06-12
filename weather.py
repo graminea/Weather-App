@@ -27,7 +27,12 @@ class WeatherApp(tk.Tk):
         self.label_end_date = tk.Label(self, text="Data de Fim (DD-MM-AAAA):")
         self.label_end_date.pack()
 
-        
+        end_date = (datetime.datetime.now() + datetime.timedelta(days=2)).strftime("%d-%m-%Y")
+        text = f"A previsão do tempo está disponível até {end_date}."
+        self.label_info = tk.Label(self, text=text)
+        self.label_info.pack()
+
+
         self.entry_end_date = tk.Entry(self)
         self.entry_end_date.pack()
 
