@@ -6,10 +6,14 @@ import datetime
 from collections import Counter
 
 class WeatherApp(tk.Tk):
-    def __init__(self):
+    def __init__(self, user):
         super().__init__()
         self.title("Weather App")
-        self.geometry("400x300")
+        self.geometry("400x350")
+        self.user = user
+
+        self.label_welcome = tk.Label(self, text=f"Bem-vindo, {self.user}!")
+        self.label_welcome.pack()
 
         self.label_city = tk.Label(self, text="Cidade:")
         self.label_city.pack()
@@ -27,38 +31,33 @@ class WeatherApp(tk.Tk):
         self.label_end_date = tk.Label(self, text="Data de Fim (DD-MM-AAAA):")
         self.label_end_date.pack()
 
-        end_date = (datetime.datetime.now() + datetime.timedelta(days=2)).strftime("%d-%m-%Y")
-        text = f"A previsão do tempo está disponível até {end_date}."
-        self.label_info = tk.Label(self, text=text)
-        self.label_info.pack()
-
-
+        default_end_date = (datetime.datetime.now() + datetime.timedelta(days=2)).strftime("%d-%m-%Y")
         self.entry_end_date = tk.Entry(self)
+        self.entry_end_date.insert(0, default_end_date)
         self.entry_end_date.pack()
+
+        info_text = f"A previsão do tempo está disponível até {default_end_date}."
+        self.label_info = tk.Label(self, text=info_text)
+        self.label_info.pack()
 
         self.button_fetch_weather = tk.Button(self, text="Buscar Previsão do Tempo", command=self.run_fetch_weather)
         self.button_fetch_weather.pack()
 
     async def get_weather(self, city, start_date, end_date):
         async with python_weather.Client(unit=python_weather.METRIC) as client:
-            
             weather = await client.get(city)
 
             start_date = datetime.datetime.strptime(start_date, "%d-%m-%Y").date()
             end_date = datetime.datetime.strptime(end_date, "%d-%m-%Y").date()
 
-            print(f"Start Date: {start_date}, End Date: {end_date}")
-
             forecasts = []
             for daily in weather.daily_forecasts:
                 forecast_date = daily.date
-                print(f"Checking forecast for: {forecast_date}")
                 if start_date <= forecast_date <= end_date:
                     avg_temp = daily.temperature
                     min_temp = daily.lowest_temperature
                     max_temp = daily.highest_temperature
 
-                    # Aggregate description and chances_of_rain from hourly forecasts
                     descriptions = []
                     rain_probs = []
                     humidity = []
@@ -92,6 +91,7 @@ class WeatherApp(tk.Tk):
                         "Probabilidade de Chuva": f"{avg_rain_prob}%",
                         "Umidade Média": f"{avg_humidity}%"
                     })
+
             return forecasts
 
     async def fetch_weather(self):
@@ -128,7 +128,6 @@ class WeatherApp(tk.Tk):
         weather_window.title(f"Previsão do Tempo para {city}")
         weather_window.geometry("600x400")
 
-
         scrollbar = tk.Scrollbar(weather_window)
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 
@@ -139,6 +138,3 @@ class WeatherApp(tk.Tk):
 
         scrollbar.config(command=text_widget.yview)
 
-if __name__ == '__main__':
-    app = WeatherApp()
-    app.mainloop()
