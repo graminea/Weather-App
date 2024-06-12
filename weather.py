@@ -16,32 +16,38 @@ class WeatherApp(tk.Tk):
         self.entry_city = tk.Entry(self)
         self.entry_city.pack()
 
-        self.label_start_date = tk.Label(self, text="Data de Início (AAAA-MM-DD):")
+        self.label_start_date = tk.Label(self, text="Data de Início (DD-MM-AAAA):")
         self.label_start_date.pack()
+
+        default_start_date = (datetime.datetime.now()).strftime("%d-%m-%Y")
         self.entry_start_date = tk.Entry(self)
+        self.entry_start_date.insert(0, default_start_date)
         self.entry_start_date.pack()
 
-        self.label_end_date = tk.Label(self, text="Data de Fim (AAAA-MM-DD):")
+        self.label_end_date = tk.Label(self, text="Data de Fim (DD-MM-AAAA):")
         self.label_end_date.pack()
+
+        
         self.entry_end_date = tk.Entry(self)
         self.entry_end_date.pack()
 
-        self.button_fetch_weather = tk.Button(self, text="Buscar Previsão do Tempo", command=self.fetch_weather)
+        self.button_fetch_weather = tk.Button(self, text="Buscar Previsão do Tempo", command=self.run_fetch_weather)
         self.button_fetch_weather.pack()
 
     async def get_weather(self, city, start_date, end_date):
         async with python_weather.Client(unit=python_weather.METRIC) as client:
-            # Fetch the weather forecast for the specified city
+            
             weather = await client.get(city)
 
-            # Parse dates
-            start_date = datetime.datetime.strptime(start_date, "%Y-%m-%d").date()
-            end_date = datetime.datetime.strptime(end_date, "%Y-%m-%d").date()
+            start_date = datetime.datetime.strptime(start_date, "%d-%m-%Y").date()
+            end_date = datetime.datetime.strptime(end_date, "%d-%m-%Y").date()
 
-            # Filter and display the forecasts within the specified date range
+            print(f"Start Date: {start_date}, End Date: {end_date}")
+
             forecasts = []
             for daily in weather.daily_forecasts:
                 forecast_date = daily.date
+                print(f"Checking forecast for: {forecast_date}")
                 if start_date <= forecast_date <= end_date:
                     avg_temp = daily.temperature
                     min_temp = daily.lowest_temperature
@@ -66,7 +72,7 @@ class WeatherApp(tk.Tk):
                         avg_rain_prob = sum(rain_probs) / len(rain_probs)
                     else:
                         avg_rain_prob = 0
-                    
+
                     if humidity:
                         avg_humidity = sum(humidity) / len(humidity)
                     else:
@@ -74,14 +80,13 @@ class WeatherApp(tk.Tk):
 
                     forecasts.append({
                         "Data": forecast_date.strftime('%Y-%m-%d'),
-                        "Temperatura Média": avg_temp,
-                        "Temperatura Mínima": min_temp,
-                        "Temperatura Máxima": max_temp,
-                        "Condição do Tempo Mais Comum": most_common_description,
-                        "Probabilidade Média de Chuva": avg_rain_prob,
-                        "Umidade Média": avg_humidity
+                        "Temperatura Média": f"{avg_temp}°C",
+                        "Temperatura Mínima": f"{min_temp}°C",
+                        "Temperatura Máxima": f"{max_temp}°C",
+                        "Condição do Tempo": most_common_description,
+                        "Probabilidade de Chuva": f"{avg_rain_prob}%",
+                        "Umidade Média": f"{avg_humidity}%"
                     })
-
             return forecasts
 
     async def fetch_weather(self):
@@ -95,11 +100,14 @@ class WeatherApp(tk.Tk):
 
         try:
             forecasts = await self.get_weather(city, start_date, end_date)
-            self.show_weather(forecasts)
+            self.show_weather(forecasts, city)
         except Exception as e:
             messagebox.showerror("Erro", f"Erro ao buscar a previsão do tempo: {e}")
 
-    def show_weather(self, forecasts):
+    def run_fetch_weather(self):
+        asyncio.run(self.fetch_weather())
+
+    def show_weather(self, forecasts, city):
         if not forecasts:
             messagebox.showinfo("Informação", "Não foram encontradas previsões para o período especificado.")
             return
@@ -110,12 +118,22 @@ class WeatherApp(tk.Tk):
             for key, value in forecast.items():
                 result_text += f"{key}: {value}\n"
             result_text += "----------------------------------------\n"
+        print(result_text)
+        weather_window = tk.Toplevel(self)
+        weather_window.title(f"Previsão do Tempo para {city}")
+        weather_window.geometry("600x400")
 
-        messagebox.showinfo("Previsão do Tempo", result_text)
+
+        scrollbar = tk.Scrollbar(weather_window)
+        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+
+        text_widget = tk.Text(weather_window, wrap=tk.WORD, yscrollcommand=scrollbar.set)
+        text_widget.pack(expand=True, fill=tk.BOTH)
+
+        text_widget.insert(tk.END, result_text)
+
+        scrollbar.config(command=text_widget.yview)
 
 if __name__ == '__main__':
     app = WeatherApp()
-
-    # Create and run the event loop
-    loop = asyncio.get_event_loop()
-    loop.run_forever()
+    app.mainloop()
