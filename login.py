@@ -18,9 +18,9 @@ class Login:
                 user_data = json.load(file)
                 for data in user_data:
                     if data.get('adm', False):
-                        user = Admin(**data)
+                        user = Admin(data)
                     else:
-                        user = RegularUser(**data)
+                        user = RegularUser(data)
                     self.users.append(user)
         except FileNotFoundError:
             print("Arquivo de logins não encontrado. Criando um novo.")
