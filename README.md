@@ -1,0 +1,2 @@
+if "Leu":
+    return "Mamou"
