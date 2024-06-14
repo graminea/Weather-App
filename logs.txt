@@ -1,0 +1,149 @@
+Weather logs:
+Usuário: gab
+Cidade: floripa
+----------------------------------------
+Data: 2024-06-13
+Temperatura Média: 19°C
+Temperatura Mínima: 17°C
+Temperatura Máxima: 24°C
+Condição do Tempo: Mist
+Probabilidade de Chuva: 0.0%
+Umidade Média: 84.75%
+Nascer do Sol: 07:02:00hrs
+Pôr do Sol: 17:27:00hrs
+Fase da Lua: Waxing Crescent
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 19°C
+Temperatura Mínima: 16°C
+Temperatura Máxima: 24°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 75.75%
+Nascer do Sol: 07:03:00hrs
+Pôr do Sol: 17:27:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 21°C
+Temperatura Mínima: 18°C
+Temperatura Máxima: 27°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 68.5%
+Nascer do Sol: 07:03:00hrs
+Pôr do Sol: 17:27:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
+Usuário: gab
+Cidade: floripa
+----------------------------------------
+Data: 2024-06-13
+Temperatura Média: 19°C
+Temperatura Mínima: 17°C
+Temperatura Máxima: 24°C
+Condição do Tempo: Mist
+Probabilidade de Chuva: 0.0%
+Umidade Média: 84.75%
+Nascer do Sol: 07:02:00hrs
+Pôr do Sol: 17:27:00hrs
+Fase da Lua: Waxing Crescent
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 19°C
+Temperatura Mínima: 16°C
+Temperatura Máxima: 24°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 75.75%
+Nascer do Sol: 07:03:00hrs
+Pôr do Sol: 17:27:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 21°C
+Temperatura Mínima: 18°C
+Temperatura Máxima: 27°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 68.5%
+Nascer do Sol: 07:03:00hrs
+Pôr do Sol: 17:27:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
+Usuário: gab
+Cidade: floripa
+----------------------------------------
+Data: 2024-06-13
+Temperatura Média: 19°C
+Temperatura Mínima: 17°C
+Temperatura Máxima: 24°C
+Condição do Tempo: Mist
+Probabilidade de Chuva: 0.0%
+Umidade Média: 84.75%
+Nascer do Sol: 07:02:00hrs
+Pôr do Sol: 17:27:00hrs
+Fase da Lua: Waxing Crescent
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 19°C
+Temperatura Mínima: 16°C
+Temperatura Máxima: 24°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 75.75%
+Nascer do Sol: 07:03:00hrs
+Pôr do Sol: 17:27:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 21°C
+Temperatura Mínima: 18°C
+Temperatura Máxima: 27°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 68.5%
+Nascer do Sol: 07:03:00hrs
+Pôr do Sol: 17:27:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
+Usuário: gab
+Cidade: belo horizonte
+----------------------------------------
+Data: 2024-06-13
+Temperatura Média: 17°C
+Temperatura Mínima: 12°C
+Temperatura Máxima: 26°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 56.125%
+Nascer do Sol: 06:28:00hrs
+Pôr do Sol: 17:24:00hrs
+Fase da Lua: Waxing Crescent
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 18°C
+Temperatura Mínima: 12°C
+Temperatura Máxima: 26°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 66.5%
+Nascer do Sol: 06:28:00hrs
+Pôr do Sol: 17:24:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 18°C
+Temperatura Mínima: 12°C
+Temperatura Máxima: 27°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 63.625%
+Nascer do Sol: 06:28:00hrs
+Pôr do Sol: 17:25:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
