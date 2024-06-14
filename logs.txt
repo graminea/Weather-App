@@ -147,3 +147,92 @@ Pôr do Sol: 17:25:00hrs
 Fase da Lua: Waxing Gibbous
 ----------------------------------------
 
+Usuário: gab
+Cidade: Thot Not
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 30°C
+Temperatura Mínima: 25°C
+Temperatura Máxima: 36°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 25.0%
+Umidade Média: 68.625%
+Nascer do Sol: 05:37:00hrs
+Pôr do Sol: 18:20:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 30°C
+Temperatura Mínima: 27°C
+Temperatura Máxima: 34°C
+Condição do Tempo: Sunny
+Probabilidade de Chuva: 33.75%
+Umidade Média: 74.75%
+Nascer do Sol: 05:37:00hrs
+Pôr do Sol: 18:21:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
+Usuário: gab
+Cidade: Serra
+----------------------------------------
+Data: 2024-06-13
+Temperatura Média: 22°C
+Temperatura Mínima: 18°C
+Temperatura Máxima: 27°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 9.25%
+Umidade Média: 74.0%
+Nascer do Sol: 06:14:00hrs
+Pôr do Sol: 17:09:00hrs
+Fase da Lua: Waxing Crescent
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 22°C
+Temperatura Mínima: 18°C
+Temperatura Máxima: 28°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 70.625%
+Nascer do Sol: 06:14:00hrs
+Pôr do Sol: 17:09:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 22°C
+Temperatura Mínima: 18°C
+Temperatura Máxima: 26°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 23.25%
+Umidade Média: 76.125%
+Nascer do Sol: 06:14:00hrs
+Pôr do Sol: 17:10:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
+Usuário: gab
+Cidade: Amsterdam
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 14°C
+Temperatura Mínima: 11°C
+Temperatura Máxima: 18°C
+Condição do Tempo: Patchy rain nearby
+Probabilidade de Chuva: 80.25%
+Umidade Média: 87.0%
+Nascer do Sol: 05:18:00hrs
+Pôr do Sol: 22:04:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 13°C
+Temperatura Mínima: 12°C
+Temperatura Máxima: 16°C
+Condição do Tempo: Patchy light drizzle
+Probabilidade de Chuva: 100.0%
+Umidade Média: 84.625%
+Nascer do Sol: 05:18:00hrs
+Pôr do Sol: 22:05:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
