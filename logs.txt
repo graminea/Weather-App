@@ -236,3 +236,225 @@ Pôr do Sol: 22:05:00hrs
 Fase da Lua: Waxing Gibbous
 ----------------------------------------
 
+Usuário: gab
+Cidade: Ouro Preto
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 16°C
+Temperatura Mínima: 11°C
+Temperatura Máxima: 24°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 69.875%
+Nascer do Sol: 06:27:00hrs
+Pôr do Sol: 17:21:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 17°C
+Temperatura Mínima: 10°C
+Temperatura Máxima: 26°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 66.25%
+Nascer do Sol: 06:27:00hrs
+Pôr do Sol: 17:22:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+Data: 2024-06-16
+Temperatura Média: 17°C
+Temperatura Mínima: 12°C
+Temperatura Máxima: 25°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 73.75%
+Nascer do Sol: 06:27:00hrs
+Pôr do Sol: 17:22:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
+Usuário: gab
+Cidade: Mariana
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 16°C
+Temperatura Mínima: 11°C
+Temperatura Máxima: 24°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 69.875%
+Nascer do Sol: 06:27:00hrs
+Pôr do Sol: 17:21:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 17°C
+Temperatura Mínima: 10°C
+Temperatura Máxima: 26°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 66.25%
+Nascer do Sol: 06:27:00hrs
+Pôr do Sol: 17:22:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+Data: 2024-06-16
+Temperatura Média: 17°C
+Temperatura Mínima: 12°C
+Temperatura Máxima: 25°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 73.75%
+Nascer do Sol: 06:27:00hrs
+Pôr do Sol: 17:22:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
+Usuário: gab
+Cidade: Florianopolis
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 19°C
+Temperatura Mínima: 16°C
+Temperatura Máxima: 25°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 75.625%
+Nascer do Sol: 07:03:00hrs
+Pôr do Sol: 17:27:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 21°C
+Temperatura Mínima: 17°C
+Temperatura Máxima: 27°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 69.5%
+Nascer do Sol: 07:03:00hrs
+Pôr do Sol: 17:27:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+Data: 2024-06-16
+Temperatura Média: 20°C
+Temperatura Mínima: 18°C
+Temperatura Máxima: 23°C
+Condição do Tempo: Partly Cloudy
+Probabilidade de Chuva: 8.25%
+Umidade Média: 83.625%
+Nascer do Sol: 07:03:00hrs
+Pôr do Sol: 17:27:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
+Usuário: gab
+Cidade: Manaus
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 28°C
+Temperatura Mínima: 24°C
+Temperatura Máxima: 33°C
+Condição do Tempo: Partly Cloudy
+Probabilidade de Chuva: 0.0%
+Umidade Média: 72.5%
+Nascer do Sol: 06:02:00hrs
+Pôr do Sol: 17:59:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 28°C
+Temperatura Mínima: 24°C
+Temperatura Máxima: 33°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 69.875%
+Nascer do Sol: 06:02:00hrs
+Pôr do Sol: 17:59:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+Data: 2024-06-16
+Temperatura Média: 28°C
+Temperatura Mínima: 24°C
+Temperatura Máxima: 33°C
+Condição do Tempo: Partly Cloudy
+Probabilidade de Chuva: 0.0%
+Umidade Média: 70.625%
+Nascer do Sol: 06:03:00hrs
+Pôr do Sol: 17:59:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
+Usuário: gab
+Cidade: Mariana
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 16°C
+Temperatura Mínima: 11°C
+Temperatura Máxima: 24°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 69.875%
+Nascer do Sol: 06:27:00hrs
+Pôr do Sol: 17:21:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 17°C
+Temperatura Mínima: 10°C
+Temperatura Máxima: 26°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 66.25%
+Nascer do Sol: 06:27:00hrs
+Pôr do Sol: 17:22:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+Data: 2024-06-16
+Temperatura Média: 17°C
+Temperatura Mínima: 12°C
+Temperatura Máxima: 25°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 73.75%
+Nascer do Sol: 06:27:00hrs
+Pôr do Sol: 17:22:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
+Usuário: gab
+Cidade: Ouro Preto
+----------------------------------------
+Data: 2024-06-14
+Temperatura Média: 16°C
+Temperatura Mínima: 11°C
+Temperatura Máxima: 24°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 69.875%
+Nascer do Sol: 06:27:00hrs
+Pôr do Sol: 17:21:00hrs
+Fase da Lua: First Quarter
+----------------------------------------
+Data: 2024-06-15
+Temperatura Média: 17°C
+Temperatura Mínima: 10°C
+Temperatura Máxima: 26°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 66.25%
+Nascer do Sol: 06:27:00hrs
+Pôr do Sol: 17:22:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+Data: 2024-06-16
+Temperatura Média: 17°C
+Temperatura Mínima: 12°C
+Temperatura Máxima: 25°C
+Condição do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade Média: 73.75%
+Nascer do Sol: 06:27:00hrs
+Pôr do Sol: 17:22:00hrs
+Fase da Lua: Waxing Gibbous
+----------------------------------------
+
