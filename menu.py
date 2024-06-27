@@ -3,8 +3,9 @@ from tkinter import messagebox
 from weather import WeatherApp
 
 class Menu:
-    def __init__(self, user):
+    def __init__(self, user, login_system):
         self.user = user
+        self.login_system = login_system
         self.root = tk.Tk()
         self.root.minsize(400, 300)
         self.setup_menu()
@@ -44,7 +45,7 @@ class Menu:
     def view_users_window(self):
         view_users_win = tk.Toplevel(self.root)
         view_users_win.title("Ver Usuários")
-        users = self.user.view_users()
+        users = self.user.view_users(self.login_system)
         users_text = "\n".join([f"{u.username} - {'Admin' if u.is_admin == 'admin' else 'Regular'}" for u in users])
         tk.Label(view_users_win, text=users_text).pack(padx=10, pady=10)
 
@@ -62,7 +63,7 @@ class Menu:
         def perform_add_user():
             new_user = entry_new_user.get()
             new_password = entry_new_password.get()
-            self.user.add_user(new_user, new_password)
+            self.user.add_user(self.login_system, new_user, new_password)
             messagebox.showinfo("Sucesso", "Usuário adicionado com sucesso!")
             add_user_win.destroy()
 
@@ -78,7 +79,7 @@ class Menu:
 
         def perform_remove_user():
             user_to_remove = entry_remove_user.get()
-            self.user.remove_user(user_to_remove)
+            self.user.remove_user(self.login_system, user_to_remove)
             messagebox.showinfo("Sucesso", "Usuário removido com sucesso!")
             remove_user_win.destroy()
 

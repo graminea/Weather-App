@@ -43,7 +43,7 @@ class LoginApp(tk.Tk):
         if logged_in_user:
             messagebox.showinfo("Sucesso", "Login efetuado com sucesso!")
             self.destroy()
-            self.on_login_success(logged_in_user)
+            self.on_login_success(logged_in_user, self.login_system)
         else:
             messagebox.showerror("Erro", "Usuário ou senha incorretos.")
 
@@ -153,3 +153,5 @@ if __name__ == '__main__':
 
     login_app = LoginApp(on_login_success)
     login_app.mainloop()
+
+
