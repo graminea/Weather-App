@@ -754,3 +754,40 @@ Pôr do Sol: 18:05:00hrs
 Fase da Lua: Waxing Crescent
 ----------------------------------------
 
+Usuário: gab
+Cidade: Tijucas
+----------------------------------------
+Data: 2024-09-08
+Temperatura Média: 20°C
+Temperatura Mínima: 17°C
+Temperatura Máxima: 27°C
+Condição do Tempo: Fog
+Probabilidade de Chuva: 35.0%
+Umidade Média: 86.875%
+Nascer do Sol: 06:19:00hrs
+Pôr do Sol: 18:05:00hrs
+Fase da Lua: Waxing Crescent
+----------------------------------------
+Data: 2024-09-09
+Temperatura Média: 20°C
+Temperatura Mínima: 18°C
+Temperatura Máxima: 25°C
+Condição do Tempo: Mist
+Probabilidade de Chuva: 48.5%
+Umidade Média: 87.5%
+Nascer do Sol: 06:18:00hrs
+Pôr do Sol: 18:05:00hrs
+Fase da Lua: Waxing Crescent
+----------------------------------------
+Data: 2024-09-10
+Temperatura Média: 20°C
+Temperatura Mínima: 18°C
+Temperatura Máxima: 24°C
+Condição do Tempo: Patchy rain nearby
+Probabilidade de Chuva: 28.0%
+Umidade Média: 85.625%
+Nascer do Sol: 06:17:00hrs
+Pôr do Sol: 18:06:00hrs
+Fase da Lua: Waxing Crescent
+----------------------------------------
+

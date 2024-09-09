@@ -38,7 +38,6 @@ class Menu:
         self.root.mainloop()
 
     def start_weather_app(self):
-        self.root.destroy()  # Close the menu window
         app = WeatherApp(self.user.username)
         app.mainloop()
 
