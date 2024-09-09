@@ -1,1 +1,57 @@
-[{"username": "gab", "password": "123", "is_admin": "admin"}, {"username": "admin", "password": "123", "is_admin": "admin"}, {"username": "gab2", "password": "123", "is_admin": "regular"}, {"username": "gab3", "password": "123", "is_admin": "regular"}, {"username": "test3", "password": "123", "is_admin": "regular"}, {"username": "test4", "password": "123", "is_admin": "regular"}, {"username": "test", "password": "154", "is_admin": "regular"}, {"username": "isabel ", "password": "Isabel01", "is_admin": "regular"}, {"username": "isabel", "password": "Isabel01", "is_admin": "regular"}]
+[
+    {
+        "username": "gab",
+        "password": "123",
+        "is_admin": "admin"
+    },
+    {
+        "username": "admin",
+        "password": "123",
+        "is_admin": "admin"
+    },
+    {
+        "username": "gab2",
+        "password": "123",
+        "is_admin": "regular"
+    },
+    {
+        "username": "gab3",
+        "password": "123",
+        "is_admin": "regular"
+    },
+    {
+        "username": "test3",
+        "password": "123",
+        "is_admin": "regular"
+    },
+    {
+        "username": "test4",
+        "password": "123",
+        "is_admin": "regular"
+    },
+    {
+        "username": "test",
+        "password": "154",
+        "is_admin": "regular"
+    },
+    {
+        "username": "isabel ",
+        "password": "Isabel01",
+        "is_admin": "regular"
+    },
+    {
+        "username": "isabel",
+        "password": "Isabel01",
+        "is_admin": "regular"
+    },
+    {
+        "username": "joao",
+        "password": "56478",
+        "is_admin": "regular"
+    },
+    {
+        "username": "kkkk",
+        "password": "kkkk]",
+        "is_admin": "regular"
+    }
+]

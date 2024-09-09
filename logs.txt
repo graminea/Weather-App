@@ -717,3 +717,40 @@ Pôr do Sol: 17:27:00hrs
 Fase da Lua: Waning Gibbous
 ----------------------------------------
 
+Usuário: gab
+Cidade: Florianopolis
+----------------------------------------
+Data: 2024-09-08
+Temperatura Média: 21°C
+Temperatura Mínima: 18°C
+Temperatura Máxima: 27°C
+Condição do Tempo: Sunny
+Probabilidade de Chuva: 0.0%
+Umidade Média: 82.625%
+Nascer do Sol: 06:19:00hrs
+Pôr do Sol: 18:04:00hrs
+Fase da Lua: Waxing Crescent
+----------------------------------------
+Data: 2024-09-09
+Temperatura Média: 21°C
+Temperatura Mínima: 18°C
+Temperatura Máxima: 26°C
+Condição do Tempo: Sunny
+Probabilidade de Chuva: 0.0%
+Umidade Média: 83.25%
+Nascer do Sol: 06:18:00hrs
+Pôr do Sol: 18:05:00hrs
+Fase da Lua: Waxing Crescent
+----------------------------------------
+Data: 2024-09-10
+Temperatura Média: 20°C
+Temperatura Mínima: 18°C
+Temperatura Máxima: 25°C
+Condição do Tempo: Sunny
+Probabilidade de Chuva: 9.5%
+Umidade Média: 82.0%
+Nascer do Sol: 06:17:00hrs
+Pôr do Sol: 18:05:00hrs
+Fase da Lua: Waxing Crescent
+----------------------------------------
+

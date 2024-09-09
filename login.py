@@ -40,7 +40,7 @@ class Login:
         folder_path = os.path.dirname(os.path.abspath(__file__))
         file_path = os.path.join(folder_path, 'logins.json')
         with open(file_path, 'w') as file:
-            json.dump([user.__dict__ for user in self.users], file)
+            json.dump([user.__dict__ for user in self.users], file, indent=4)
 
     def remove_user(self, username):
         self.users = [user for user in self.users if user.username != username]
