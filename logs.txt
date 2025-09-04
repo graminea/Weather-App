@@ -1,793 +1,129 @@
-Weather logs:
-Usuário: gab
-Cidade: floripa
+UsuÃ¡rio: gabri
+Cidade: Florianopolis
 ----------------------------------------
-Data: 2024-06-13
-Temperatura Média: 19°C
-Temperatura Mínima: 17°C
-Temperatura Máxima: 24°C
-Condição do Tempo: Mist
-Probabilidade de Chuva: 0.0%
-Umidade Média: 84.75%
-Nascer do Sol: 07:02:00hrs
-Pôr do Sol: 17:27:00hrs
-Fase da Lua: Waxing Crescent
-----------------------------------------
-Data: 2024-06-14
-Temperatura Média: 19°C
-Temperatura Mínima: 16°C
-Temperatura Máxima: 24°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 75.75%
-Nascer do Sol: 07:03:00hrs
-Pôr do Sol: 17:27:00hrs
-Fase da Lua: First Quarter
-----------------------------------------
-Data: 2024-06-15
-Temperatura Média: 21°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 68.5%
-Nascer do Sol: 07:03:00hrs
-Pôr do Sol: 17:27:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-
-Usuário: gab
-Cidade: floripa
-----------------------------------------
-Data: 2024-06-13
-Temperatura Média: 19°C
-Temperatura Mínima: 17°C
-Temperatura Máxima: 24°C
-Condição do Tempo: Mist
-Probabilidade de Chuva: 0.0%
-Umidade Média: 84.75%
-Nascer do Sol: 07:02:00hrs
-Pôr do Sol: 17:27:00hrs
-Fase da Lua: Waxing Crescent
-----------------------------------------
-Data: 2024-06-14
-Temperatura Média: 19°C
-Temperatura Mínima: 16°C
-Temperatura Máxima: 24°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 75.75%
-Nascer do Sol: 07:03:00hrs
-Pôr do Sol: 17:27:00hrs
-Fase da Lua: First Quarter
-----------------------------------------
-Data: 2024-06-15
-Temperatura Média: 21°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 68.5%
-Nascer do Sol: 07:03:00hrs
-Pôr do Sol: 17:27:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-
-Usuário: gab
-Cidade: floripa
-----------------------------------------
-Data: 2024-06-13
-Temperatura Média: 19°C
-Temperatura Mínima: 17°C
-Temperatura Máxima: 24°C
-Condição do Tempo: Mist
-Probabilidade de Chuva: 0.0%
-Umidade Média: 84.75%
-Nascer do Sol: 07:02:00hrs
-Pôr do Sol: 17:27:00hrs
-Fase da Lua: Waxing Crescent
-----------------------------------------
-Data: 2024-06-14
-Temperatura Média: 19°C
-Temperatura Mínima: 16°C
-Temperatura Máxima: 24°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 75.75%
-Nascer do Sol: 07:03:00hrs
-Pôr do Sol: 17:27:00hrs
-Fase da Lua: First Quarter
-----------------------------------------
-Data: 2024-06-15
-Temperatura Média: 21°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 68.5%
-Nascer do Sol: 07:03:00hrs
-Pôr do Sol: 17:27:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-
-Usuário: gab
-Cidade: belo horizonte
-----------------------------------------
-Data: 2024-06-13
-Temperatura Média: 17°C
-Temperatura Mínima: 12°C
-Temperatura Máxima: 26°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 56.125%
-Nascer do Sol: 06:28:00hrs
-Pôr do Sol: 17:24:00hrs
-Fase da Lua: Waxing Crescent
-----------------------------------------
-Data: 2024-06-14
-Temperatura Média: 18°C
-Temperatura Mínima: 12°C
-Temperatura Máxima: 26°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 66.5%
-Nascer do Sol: 06:28:00hrs
-Pôr do Sol: 17:24:00hrs
-Fase da Lua: First Quarter
-----------------------------------------
-Data: 2024-06-15
-Temperatura Média: 18°C
-Temperatura Mínima: 12°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 63.625%
-Nascer do Sol: 06:28:00hrs
-Pôr do Sol: 17:25:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-
-Usuário: gab
-Cidade: Thot Not
-----------------------------------------
-Data: 2024-06-14
-Temperatura Média: 30°C
-Temperatura Mínima: 25°C
-Temperatura Máxima: 36°C
-Condição do Tempo: Clear
+Data: 2025-09-04
+Temperatura MÃ©dia: 19Â°C
+Temperatura MÃ­nima: 15Â°C
+Temperatura MÃ¡xima: 24Â°C
+CondiÃ§Ã£o do Tempo: Mist
 Probabilidade de Chuva: 25.0%
-Umidade Média: 68.625%
-Nascer do Sol: 05:37:00hrs
-Pôr do Sol: 18:20:00hrs
-Fase da Lua: First Quarter
-----------------------------------------
-Data: 2024-06-15
-Temperatura Média: 30°C
-Temperatura Mínima: 27°C
-Temperatura Máxima: 34°C
-Condição do Tempo: Sunny
-Probabilidade de Chuva: 33.75%
-Umidade Média: 74.75%
-Nascer do Sol: 05:37:00hrs
-Pôr do Sol: 18:21:00hrs
+Umidade MÃ©dia: 85.75%
+Nascer do Sol: 06:24:00hrs
+PÃ´r do Sol: 18:02:00hrs
 Fase da Lua: Waxing Gibbous
 ----------------------------------------
 
-Usuário: gab
-Cidade: Serra
-----------------------------------------
-Data: 2024-06-13
-Temperatura Média: 22°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 9.25%
-Umidade Média: 74.0%
-Nascer do Sol: 06:14:00hrs
-Pôr do Sol: 17:09:00hrs
-Fase da Lua: Waxing Crescent
-----------------------------------------
-Data: 2024-06-14
-Temperatura Média: 22°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 28°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 70.625%
-Nascer do Sol: 06:14:00hrs
-Pôr do Sol: 17:09:00hrs
-Fase da Lua: First Quarter
-----------------------------------------
-Data: 2024-06-15
-Temperatura Média: 22°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 26°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 23.25%
-Umidade Média: 76.125%
-Nascer do Sol: 06:14:00hrs
-Pôr do Sol: 17:10:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-
-Usuário: gab
-Cidade: Amsterdam
-----------------------------------------
-Data: 2024-06-14
-Temperatura Média: 14°C
-Temperatura Mínima: 11°C
-Temperatura Máxima: 18°C
-Condição do Tempo: Patchy rain nearby
-Probabilidade de Chuva: 80.25%
-Umidade Média: 87.0%
-Nascer do Sol: 05:18:00hrs
-Pôr do Sol: 22:04:00hrs
-Fase da Lua: First Quarter
-----------------------------------------
-Data: 2024-06-15
-Temperatura Média: 13°C
-Temperatura Mínima: 12°C
-Temperatura Máxima: 16°C
-Condição do Tempo: Patchy light drizzle
-Probabilidade de Chuva: 100.0%
-Umidade Média: 84.625%
-Nascer do Sol: 05:18:00hrs
-Pôr do Sol: 22:05:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-
-Usuário: gab
+UsuÃ¡rio: gabri
 Cidade: Florianopolis
 ----------------------------------------
-Data: 2024-06-18
-Temperatura Média: 19°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 23°C
-Condição do Tempo: Fog
+Data: 2025-09-04
+Temperatura MÃ©dia: 19Â°C
+Temperatura MÃ­nima: 15Â°C
+Temperatura MÃ¡xima: 24Â°C
+CondiÃ§Ã£o do Tempo: Mist
 Probabilidade de Chuva: 25.0%
-Umidade Média: 90.125%
-Nascer do Sol: 07:04:00hrs
-Pôr do Sol: 17:28:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-19
-Temperatura Média: 20°C
-Temperatura Mínima: 17°C
-Temperatura Máxima: 26°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 73.0%
-Nascer do Sol: 07:04:00hrs
-Pôr do Sol: 17:28:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-20
-Temperatura Média: 20°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 23°C
-Condição do Tempo: Partly Cloudy
-Probabilidade de Chuva: 0.0%
-Umidade Média: 74.75%
-Nascer do Sol: 07:04:00hrs
-Pôr do Sol: 17:28:00hrs
+Umidade MÃ©dia: 85.75%
+Nascer do Sol: 06:24:00hrs
+PÃ´r do Sol: 18:02:00hrs
 Fase da Lua: Waxing Gibbous
 ----------------------------------------
 
-Usuário: gab
-Cidade: Belo Horizonte
-----------------------------------------
-Data: 2024-06-18
-Temperatura Média: 19°C
-Temperatura Mínima: 13°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 58.5%
-Nascer do Sol: 06:29:00hrs
-Pôr do Sol: 17:25:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-19
-Temperatura Média: 19°C
-Temperatura Mínima: 13°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 52.875%
-Nascer do Sol: 06:29:00hrs
-Pôr do Sol: 17:25:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-20
-Temperatura Média: 20°C
-Temperatura Mínima: 14°C
-Temperatura Máxima: 28°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 55.875%
-Nascer do Sol: 06:29:00hrs
-Pôr do Sol: 17:26:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-
-Usuário: test4
+UsuÃ¡rio: gabri
 Cidade: Florianopolis
 ----------------------------------------
-Data: 2024-06-18
-Temperatura Média: 19°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 23°C
-Condição do Tempo: Fog
+Data: 2025-09-04
+Temperatura MÃ©dia: 19Â°C
+Temperatura MÃ­nima: 15Â°C
+Temperatura MÃ¡xima: 24Â°C
+CondiÃ§Ã£o do Tempo: Mist
 Probabilidade de Chuva: 25.0%
-Umidade Média: 90.125%
-Nascer do Sol: 07:04:00hrs
-Pôr do Sol: 17:28:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-19
-Temperatura Média: 20°C
-Temperatura Mínima: 17°C
-Temperatura Máxima: 26°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 73.0%
-Nascer do Sol: 07:04:00hrs
-Pôr do Sol: 17:28:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-20
-Temperatura Média: 20°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 23°C
-Condição do Tempo: Partly Cloudy
-Probabilidade de Chuva: 0.0%
-Umidade Média: 74.75%
-Nascer do Sol: 07:04:00hrs
-Pôr do Sol: 17:28:00hrs
+Umidade MÃ©dia: 85.75%
+Nascer do Sol: 06:24:00hrs
+PÃ´r do Sol: 18:02:00hrs
 Fase da Lua: Waxing Gibbous
 ----------------------------------------
 
-Usuário: gab
-Cidade: Paris
 ----------------------------------------
-Data: 2024-06-18
-Temperatura Média: 18°C
-Temperatura Mínima: 15°C
-Temperatura Máxima: 23°C
-Condição do Tempo: Mist
-Probabilidade de Chuva: 80.75%
-Umidade Média: 88.125%
-Nascer do Sol: 05:47:00hrs
-Pôr do Sol: 21:57:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-19
-Temperatura Média: 18°C
-Temperatura Mínima: 15°C
-Temperatura Máxima: 21°C
-Condição do Tempo: Patchy rain nearby
-Probabilidade de Chuva: 52.75%
-Umidade Média: 83.25%
-Nascer do Sol: 05:47:00hrs
-Pôr do Sol: 21:58:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-20
-Temperatura Média: 19°C
-Temperatura Mínima: 14°C
-Temperatura Máxima: 23°C
-Condição do Tempo: Partly Cloudy
-Probabilidade de Chuva: 37.5%
-Umidade Média: 81.375%
-Nascer do Sol: 05:47:00hrs
-Pôr do Sol: 21:58:00hrs
+Data: 2025-09-05
+Temperatura MÃ©dia: 14Â°C
+Temperatura MÃ­nima: 12Â°C
+Temperatura MÃ¡xima: 15Â°C
+CondiÃ§Ã£o do Tempo: Patchy rain nearby
+Probabilidade de Chuva: 59.5%
+Umidade MÃ©dia: 81.75%
+Nascer do Sol: 06:23:00hrs
+PÃ´r do Sol: 18:03:00hrs
 Fase da Lua: Waxing Gibbous
 ----------------------------------------
 
-Usuário: gab
-Cidade: Rio Claro
+UsuÃ¡rio: gabriel
+Cidade: Shikinejima
 ----------------------------------------
-Data: 2024-06-18
-Temperatura Média: 19°C
-Temperatura Mínima: 12°C
-Temperatura Máxima: 28°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 41.875%
-Nascer do Sol: 06:49:00hrs
-Pôr do Sol: 17:35:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-19
-Temperatura Média: 20°C
-Temperatura Mínima: 13°C
-Temperatura Máxima: 30°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 42.0%
-Nascer do Sol: 06:49:00hrs
-Pôr do Sol: 17:35:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-20
-Temperatura Média: 20°C
-Temperatura Mínima: 13°C
-Temperatura Máxima: 30°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 40.875%
-Nascer do Sol: 06:49:00hrs
-Pôr do Sol: 17:35:00hrs
+Data: 2025-09-05
+Temperatura MÃ©dia: 27Â°C
+Temperatura MÃ­nima: 25Â°C
+Temperatura MÃ¡xima: 28Â°C
+CondiÃ§Ã£o do Tempo: Light rain shower
+Probabilidade de Chuva: 87.5%
+Umidade MÃ©dia: 87.75%
+Nascer do Sol: 05:19:00hrs
+PÃ´r do Sol: 18:04:00hrs
 Fase da Lua: Waxing Gibbous
 ----------------------------------------
 
-Usuário: test
-Cidade: Florianopolis
+UsuÃ¡rio: gabriel
+Cidade: La Laborcita
 ----------------------------------------
-Data: 2024-06-18
-Temperatura Média: 19°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 23°C
-Condição do Tempo: Sunny
-Probabilidade de Chuva: 44.375%
-Umidade Média: 91.875%
-Nascer do Sol: 07:04:00hrs
-Pôr do Sol: 17:28:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-19
-Temperatura Média: 20°C
-Temperatura Mínima: 17°C
-Temperatura Máxima: 26°C
-Condição do Tempo: Clear
+Data: 2025-09-04
+Temperatura MÃ©dia: 18Â°C
+Temperatura MÃ­nima: 13Â°C
+Temperatura MÃ¡xima: 25Â°C
+CondiÃ§Ã£o do Tempo: Clear
 Probabilidade de Chuva: 0.0%
-Umidade Média: 72.5%
-Nascer do Sol: 07:04:00hrs
-Pôr do Sol: 17:28:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-20
-Temperatura Média: 20°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 23°C
-Condição do Tempo: Partly Cloudy
-Probabilidade de Chuva: 0.0%
-Umidade Média: 75.875%
-Nascer do Sol: 07:04:00hrs
-Pôr do Sol: 17:28:00hrs
+Umidade MÃ©dia: 78.375%
+Nascer do Sol: 07:24:00hrs
+PÃ´r do Sol: 19:57:00hrs
 Fase da Lua: Waxing Gibbous
 ----------------------------------------
 
-Usuário: test5
-Cidade: Belo Horizonte
 ----------------------------------------
-Data: 2024-06-18
-Temperatura Média: 18°C
-Temperatura Mínima: 12°C
-Temperatura Máxima: 26°C
-Condição do Tempo: Clear
+Data: 2025-09-05
+Temperatura MÃ©dia: 20Â°C
+Temperatura MÃ­nima: 14Â°C
+Temperatura MÃ¡xima: 28Â°C
+CondiÃ§Ã£o do Tempo: Partly Cloudy
 Probabilidade de Chuva: 0.0%
-Umidade Média: 58.0%
-Nascer do Sol: 06:29:00hrs
-Pôr do Sol: 17:25:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-19
-Temperatura Média: 19°C
-Temperatura Mínima: 13°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 54.875%
-Nascer do Sol: 06:29:00hrs
-Pôr do Sol: 17:25:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-20
-Temperatura Média: 19°C
-Temperatura Mínima: 14°C
-Temperatura Máxima: 28°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 55.875%
-Nascer do Sol: 06:29:00hrs
-Pôr do Sol: 17:26:00hrs
+Umidade MÃ©dia: 72.75%
+Nascer do Sol: 07:25:00hrs
+PÃ´r do Sol: 19:56:00hrs
 Fase da Lua: Waxing Gibbous
 ----------------------------------------
 
-Usuário: joao
-Cidade: Florianopolis
-----------------------------------------
-Data: 2024-06-18
-Temperatura Média: 19°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 23°C
-Condição do Tempo: Sunny
-Probabilidade de Chuva: 44.375%
-Umidade Média: 91.875%
-Nascer do Sol: 07:04:00hrs
-Pôr do Sol: 17:28:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-19
-Temperatura Média: 20°C
-Temperatura Mínima: 17°C
-Temperatura Máxima: 26°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 72.5%
-Nascer do Sol: 07:04:00hrs
-Pôr do Sol: 17:28:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-20
-Temperatura Média: 20°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 23°C
-Condição do Tempo: Partly Cloudy
-Probabilidade de Chuva: 0.0%
-Umidade Média: 75.875%
-Nascer do Sol: 07:04:00hrs
-Pôr do Sol: 17:28:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-
-Usuário: joao
-Cidade: Sao Paulo
-----------------------------------------
-Data: 2024-06-18
-Temperatura Média: 21°C
-Temperatura Mínima: 15°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 39.75%
-Nascer do Sol: 06:47:00hrs
-Pôr do Sol: 17:29:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-19
-Temperatura Média: 22°C
-Temperatura Mínima: 16°C
-Temperatura Máxima: 28°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 39.0%
-Nascer do Sol: 06:47:00hrs
-Pôr do Sol: 17:29:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-Data: 2024-06-20
-Temperatura Média: 22°C
-Temperatura Mínima: 17°C
-Temperatura Máxima: 29°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 38.0%
-Nascer do Sol: 06:48:00hrs
-Pôr do Sol: 17:29:00hrs
-Fase da Lua: Waxing Gibbous
-----------------------------------------
-
-Usuário: gab
-Cidade: Tijucas
-----------------------------------------
-Data: 2024-06-22
-Temperatura Média: 19°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 20°C
-Condição do Tempo: Sunny
-Probabilidade de Chuva: 8.125%
-Umidade Média: 88.375%
-Nascer do Sol: 07:03:00hrs
-Pôr do Sol: 17:28:00hrs
-Fase da Lua: Full Moon
-----------------------------------------
-Data: 2024-06-23
-Temperatura Média: 21°C
-Temperatura Mínima: 19°C
-Temperatura Máxima: 23°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 80.75%
-Nascer do Sol: 07:03:00hrs
-Pôr do Sol: 17:29:00hrs
-Fase da Lua: Waning Gibbous
-----------------------------------------
-Data: 2024-06-24
-Temperatura Média: 19°C
-Temperatura Mínima: 17°C
-Temperatura Máxima: 20°C
-Condição do Tempo: Light rain
-Probabilidade de Chuva: 60.0%
-Umidade Média: 88.75%
-Nascer do Sol: 07:03:00hrs
-Pôr do Sol: 17:29:00hrs
-Fase da Lua: Waning Gibbous
-----------------------------------------
-
-Usuário: gab
-Cidade: Florianopolis
-----------------------------------------
-Data: 2024-06-22
-Temperatura Média: 19°C
-Temperatura Mínima: 17°C
-Temperatura Máxima: 24°C
-Condição do Tempo: Sunny
-Probabilidade de Chuva: 0.0%
-Umidade Média: 84.625%
-Nascer do Sol: 07:05:00hrs
-Pôr do Sol: 17:29:00hrs
-Fase da Lua: Full Moon
-----------------------------------------
-Data: 2024-06-23
-Temperatura Média: 21°C
-Temperatura Mínima: 17°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 71.875%
-Nascer do Sol: 07:05:00hrs
-Pôr do Sol: 17:29:00hrs
-Fase da Lua: Waning Gibbous
-----------------------------------------
-Data: 2024-06-24
-Temperatura Média: 17°C
-Temperatura Mínima: 14°C
-Temperatura Máxima: 19°C
-Condição do Tempo: Light drizzle
-Probabilidade de Chuva: 84.0%
-Umidade Média: 91.0%
-Nascer do Sol: 07:05:00hrs
-Pôr do Sol: 17:29:00hrs
-Fase da Lua: Waning Gibbous
-----------------------------------------
-
-Usuário: gab
+UsuÃ¡rio: gabriel
 Cidade: London
 ----------------------------------------
-Data: 2024-06-22
-Temperatura Média: 18°C
-Temperatura Mínima: 13°C
-Temperatura Máxima: 21°C
-Condição do Tempo: Patchy rain nearby
-Probabilidade de Chuva: 69.625%
-Umidade Média: 67.625%
-Nascer do Sol: 04:43:00hrs
-Pôr do Sol: 21:22:00hrs
-Fase da Lua: Full Moon
-----------------------------------------
-Data: 2024-06-23
-Temperatura Média: 20°C
-Temperatura Mínima: 13°C
-Temperatura Máxima: 26°C
-Condição do Tempo: Sunny
-Probabilidade de Chuva: 17.25%
-Umidade Média: 62.5%
-Nascer do Sol: 04:44:00hrs
-Pôr do Sol: 21:22:00hrs
-Fase da Lua: Waning Gibbous
-----------------------------------------
-Data: 2024-06-24
-Temperatura Média: 21°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 25°C
-Condição do Tempo: Patchy rain nearby
-Probabilidade de Chuva: 57.875%
-Umidade Média: 67.25%
-Nascer do Sol: 04:44:00hrs
-Pôr do Sol: 21:22:00hrs
-Fase da Lua: Waning Gibbous
-----------------------------------------
-
-Usuário: gab
-Cidade: Belo Horizonte
-----------------------------------------
-Data: 2024-06-22
-Temperatura Média: 19°C
-Temperatura Mínima: 13°C
-Temperatura Máxima: 26°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 63.75%
-Nascer do Sol: 06:30:00hrs
-Pôr do Sol: 17:26:00hrs
-Fase da Lua: Full Moon
-----------------------------------------
-Data: 2024-06-23
-Temperatura Média: 20°C
-Temperatura Mínima: 13°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 61.75%
-Nascer do Sol: 06:30:00hrs
-Pôr do Sol: 17:26:00hrs
-Fase da Lua: Waning Gibbous
-----------------------------------------
-Data: 2024-06-24
-Temperatura Média: 20°C
-Temperatura Mínima: 14°C
-Temperatura Máxima: 28°C
-Condição do Tempo: Clear
-Probabilidade de Chuva: 0.0%
-Umidade Média: 59.125%
-Nascer do Sol: 06:30:00hrs
-Pôr do Sol: 17:27:00hrs
-Fase da Lua: Waning Gibbous
-----------------------------------------
-
-Usuário: gab
-Cidade: Florianopolis
-----------------------------------------
-Data: 2024-09-08
-Temperatura Média: 21°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Sunny
-Probabilidade de Chuva: 0.0%
-Umidade Média: 82.625%
-Nascer do Sol: 06:19:00hrs
-Pôr do Sol: 18:04:00hrs
-Fase da Lua: Waxing Crescent
-----------------------------------------
-Data: 2024-09-09
-Temperatura Média: 21°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 26°C
-Condição do Tempo: Sunny
-Probabilidade de Chuva: 0.0%
-Umidade Média: 83.25%
+Data: 2025-09-04
+Temperatura MÃ©dia: 16Â°C
+Temperatura MÃ­nima: 14Â°C
+Temperatura MÃ¡xima: 19Â°C
+CondiÃ§Ã£o do Tempo: Partly Cloudy
+Probabilidade de Chuva: 46.125%
+Umidade MÃ©dia: 71.375%
 Nascer do Sol: 06:18:00hrs
-Pôr do Sol: 18:05:00hrs
-Fase da Lua: Waxing Crescent
-----------------------------------------
-Data: 2024-09-10
-Temperatura Média: 20°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 25°C
-Condição do Tempo: Sunny
-Probabilidade de Chuva: 9.5%
-Umidade Média: 82.0%
-Nascer do Sol: 06:17:00hrs
-Pôr do Sol: 18:05:00hrs
-Fase da Lua: Waxing Crescent
+PÃ´r do Sol: 19:40:00hrs
+Fase da Lua: Waxing Gibbous
 ----------------------------------------
 
-Usuário: gab
-Cidade: Tijucas
 ----------------------------------------
-Data: 2024-09-08
-Temperatura Média: 20°C
-Temperatura Mínima: 17°C
-Temperatura Máxima: 27°C
-Condição do Tempo: Fog
-Probabilidade de Chuva: 35.0%
-Umidade Média: 86.875%
+Data: 2025-09-05
+Temperatura MÃ©dia: 17Â°C
+Temperatura MÃ­nima: 12Â°C
+Temperatura MÃ¡xima: 22Â°C
+CondiÃ§Ã£o do Tempo: Clear
+Probabilidade de Chuva: 0.0%
+Umidade MÃ©dia: 64.375%
 Nascer do Sol: 06:19:00hrs
-Pôr do Sol: 18:05:00hrs
-Fase da Lua: Waxing Crescent
-----------------------------------------
-Data: 2024-09-09
-Temperatura Média: 20°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 25°C
-Condição do Tempo: Mist
-Probabilidade de Chuva: 48.5%
-Umidade Média: 87.5%
-Nascer do Sol: 06:18:00hrs
-Pôr do Sol: 18:05:00hrs
-Fase da Lua: Waxing Crescent
-----------------------------------------
-Data: 2024-09-10
-Temperatura Média: 20°C
-Temperatura Mínima: 18°C
-Temperatura Máxima: 24°C
-Condição do Tempo: Patchy rain nearby
-Probabilidade de Chuva: 28.0%
-Umidade Média: 85.625%
-Nascer do Sol: 06:17:00hrs
-Pôr do Sol: 18:06:00hrs
-Fase da Lua: Waxing Crescent
+PÃ´r do Sol: 19:38:00hrs
+Fase da Lua: Waxing Gibbous
 ----------------------------------------
 

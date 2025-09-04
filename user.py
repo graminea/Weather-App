@@ -6,6 +6,13 @@ class User:
 
     def __repr__(self):
         return self.username
+    
+    def to_dict(self):
+        return {
+            "username": self.username,
+            "password": self.password,
+            "is_admin": self.is_admin
+        }
 
 class Admin(User):
     def __init__(self, username, password):

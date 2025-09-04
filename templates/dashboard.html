@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#3B82F6',
+                        'accent-green': '#10B981',
+                        'accent-hover-green': '#059669',
+                        'admin-purple': '#8B5CF6',
+                        'admin-hover-purple': '#7C3AED',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-gray-800/50 backdrop-blur-sm border-b border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-white">
+                            <span class="text-primary-blue">🌤️</span> WeatherApp
+                        </h1>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gray-300 text-sm">
+                        <span class="text-primary-blue">👤</span> {{ username }}
+                        {% if is_admin %}
+                            <span class="ml-2 px-2 py-1 bg-admin-purple text-white text-xs rounded-full">ADMIN</span>
+                        {% endif %}
+                    </span>
+                    <a href="{{ url_for('logout') }}" 
+                       class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Welcome Section -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg">
+                Welcome to WeatherApp!
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Access weather forecasts and manage your meteorological data
+            </p>
+        </div>
+
+        <!-- Main Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <!-- Weather Forecast Card -->
+            <div class="group bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:bg-gray-800/70 transition-all duration-300 cursor-pointer transform hover:scale-105 hover:shadow-2xl"
+                 onclick="window.location.href='{{ url_for('weather') }}'">
+                <div class="text-center">
+                    <div class="text-6xl mb-4">🌤️</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Weather Forecast</h3>
+                    <p class="text-gray-300 mb-6">
+                        Consult detailed weather forecasts for any city, 
+                        including temperature, humidity, rain probability and much more.
+                    </p>
+                    <button class="w-full py-3 px-6 bg-accent-green text-white font-bold rounded-lg shadow-lg hover:bg-accent-hover-green focus:outline-none focus:ring-2 focus:ring-accent-green focus:ring-offset-2 focus:ring-offset-gray-800 transition-all duration-200 transform group-hover:scale-105">
+                        🌍 Access Forecast
+                    </button>
+                </div>
+            </div>
+
+            <!-- Logs Card -->
+            <div class="group bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:bg-gray-800/70 transition-all duration-300 cursor-pointer transform hover:scale-105 hover:shadow-2xl"
+                 onclick="window.location.href='{{ url_for('logs') }}'">
+                <div class="text-center">
+                    <div class="text-6xl mb-4">📊</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Query History</h3>
+                    <p class="text-gray-300 mb-6">
+                        View all weather query history, 
+                        including user data and queried cities.
+                    </p>
+                    <button class="w-full py-3 px-6 bg-primary-blue text-white font-bold rounded-lg shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-primary-blue focus:ring-offset-2 focus:ring-offset-gray-800 transition-all duration-200 transform group-hover:scale-105">
+                        📈 View Logs
+                    </button>
+                </div>
+            </div>
+
+            <!-- Profile Card -->
+            <div class="group bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:bg-gray-800/70 transition-all duration-300 cursor-pointer transform hover:scale-105 hover:shadow-2xl">
+                <div class="text-center">
+                    <div class="text-6xl mb-4">👤</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">User Profile</h3>
+                    <p class="text-gray-300 mb-6">
+                        Manage your personal information and account settings.
+                        View usage statistics and preferences.
+                    </p>
+                    <button class="w-full py-3 px-6 bg-gray-600 text-white font-bold rounded-lg shadow-lg cursor-not-allowed opacity-50" disabled>
+                        🔧 Coming Soon
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Admin Section (only visible to admins) -->
+        {% if is_admin %}
+        <div class="bg-gradient-to-r from-admin-purple/20 to-blue-600/20 border border-admin-purple/30 rounded-xl p-6 mb-8">
+            <div class="flex items-center mb-6">
+                <div class="text-4xl mr-4">👑</div>
+                <div>
+                    <h2 class="text-3xl font-bold text-white">Administrative Panel</h2>
+                    <p class="text-gray-300">Manage users and system settings</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- User Management -->
+                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-4 hover:bg-gray-800/70 transition-all duration-300 cursor-pointer" onclick="showUserManagement()">
+                    <div class="text-center">
+                        <div class="text-3xl mb-2">👥</div>
+                        <h4 class="text-lg font-semibold text-white mb-2">Manage Users</h4>
+                        <p class="text-sm text-gray-300 mb-3">Add, remove and view users</p>
+                        <button class="w-full py-2 px-4 bg-admin-purple text-white font-semibold rounded-lg hover:bg-admin-hover-purple transition-colors duration-200">
+                            Access
+                        </button>
+                    </div>
+                </div>
+
+                <!-- System Stats -->
+                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-4 hover:bg-gray-800/70 transition-all duration-300 cursor-pointer" onclick="showSystemStats()">
+                    <div class="text-center">
+                        <div class="text-3xl mb-2">📈</div>
+                        <h4 class="text-lg font-semibold text-white mb-2">Statistics</h4>
+                        <p class="text-sm text-gray-300 mb-3">View system metrics</p>
+                        <button class="w-full py-2 px-4 bg-admin-purple text-white font-semibold rounded-lg hover:bg-admin-hover-purple transition-colors duration-200">
+                            View Stats
+                        </button>
+                    </div>
+                </div>
+
+                <!-- System Settings -->
+                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-4 hover:bg-gray-800/70 transition-all duration-300 cursor-pointer" onclick="showSystemSettings()">
+                    <div class="text-center">
+                        <div class="text-3xl mb-2">⚙️</div>
+                        <h4 class="text-lg font-semibold text-white mb-2">Settings</h4>
+                        <p class="text-sm text-gray-300 mb-3">Configure system parameters</p>
+                        <button class="w-full py-2 px-4 bg-admin-purple text-white font-semibold rounded-lg hover:bg-admin-hover-purple transition-colors duration-200">
+                            Configure
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Quick Stats -->
+        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6">
+            <h3 class="text-2xl font-bold text-white mb-6 text-center">
+                <span class="text-primary-blue">📊</span> Quick Statistics
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-accent-green mb-2">∞</div>
+                    <div class="text-gray-300 text-sm">Available Queries</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary-blue mb-2">🌍</div>
+                    <div class="text-gray-300 text-sm">Global Coverage</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-yellow-400 mb-2">5</div>
+                    <div class="text-gray-300 text-sm">Forecast Days</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-red-400 mb-2">24/7</div>
+                    <div class="text-gray-300 text-sm">Availability</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="mt-8 text-center">
+            <h3 class="text-xl font-semibold text-white mb-4">Quick Actions</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="{{ url_for('weather') }}" 
+                   class="inline-flex items-center px-6 py-3 bg-accent-green text-white font-semibold rounded-lg hover:bg-accent-hover-green transition-colors duration-200">
+                    🌤️ New Query
+                </a>
+                <a href="{{ url_for('logs') }}" 
+                   class="inline-flex items-center px-6 py-3 bg-primary-blue text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors duration-200">
+                    📊 View History
+                </a>
+                {% if is_admin %}
+                <button onclick="showUserManagement()" class="inline-flex items-center px-6 py-3 bg-admin-purple text-white font-semibold rounded-lg hover:bg-admin-hover-purple transition-colors duration-200">
+                    👥 Manage Users
+                </button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to cards
+            const cards = document.querySelectorAll('.group');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+
+        // Admin Functions
+        function showUserManagement() {
+            const modal = createModal('Manage Users', `
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-white">User List</h3>
+                        <button onclick="showAddUserForm()" class="px-4 py-2 bg-admin-purple text-white rounded-lg hover:bg-admin-hover-purple transition-colors">
+                            ➕ Add User
+                        </button>
+                    </div>
+                    <div id="usersList" class="max-h-96 overflow-y-auto">
+                        <div class="text-center py-8">
+                            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-blue mx-auto mb-2"></div>
+                            <p class="text-gray-300">Loading users...</p>
+                        </div>
+                    </div>
+                </div>
+            `);
+            loadUsers();
+        }
+
+        function showSystemStats() {
+            const modal = createModal('System Statistics', `
+                <div class="space-y-4">
+                    <div id="statsContent" class="text-center py-8">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-blue mx-auto mb-2"></div>
+                        <p class="text-gray-300">Loading statistics...</p>
+                    </div>
+                </div>
+            `);
+            loadStats();
+        }
+
+        function showSystemSettings() {
+            const modal = createModal('System Settings', `
+                <div class="space-y-4">
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <h4 class="text-lg font-semibold text-white mb-3">General Settings</h4>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-300">Maintenance Mode</span>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-gray-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                                </label>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-300">Email Notifications</span>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" class="sr-only peer" checked>
+                                    <div class="w-11 h-6 bg-gray-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="px-6 py-2 bg-accent-green text-white rounded-lg hover:bg-accent-hover-green transition-colors">
+                            💾 Save Settings
+                        </button>
+                    </div>
+                </div>
+            `);
+        }
+
+        function createModal(title, content) {
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+            modal.innerHTML = `
+                <div class="bg-gray-800 rounded-xl p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl font-bold text-white">${title}</h2>
+                        <button onclick="closeModal()" class="text-gray-400 hover:text-white text-2xl">&times;</button>
+                    </div>
+                    ${content}
+                </div>
+            `;
+            document.body.appendChild(modal);
+            return modal;
+        }
+
+        function closeModal() {
+            const modal = document.querySelector('.fixed.inset-0');
+            if (modal) {
+                modal.remove();
+            }
+        }
+
+        async function loadUsers() {
+            try {
+                const response = await fetch('/api/admin/users');
+                const result = await response.json();
+                
+                if (response.ok) {
+                    const usersList = document.getElementById('usersList');
+                    usersList.innerHTML = result.users.map(user => `
+                        <div class="bg-gray-700 rounded-lg p-4 mb-2 flex justify-between items-center">
+                            <div>
+                                <div class="text-white font-semibold">${user.username}</div>
+                                <div class="text-gray-400 text-sm">
+                                    ${user.is_admin === 'admin' ? '👑 Administrator' : '👤 Regular User'}
+                                </div>
+                            </div>
+                            <div class="flex space-x-2">
+                                ${user.username !== '{{ username }}' ? `
+                                    <button onclick="deleteUser('${user.username}')" class="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition-colors text-sm">
+                                        🗑️
+                                    </button>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    document.getElementById('usersList').innerHTML = `
+                        <div class="text-center py-4 text-red-400">
+                            Error loading users: ${result.error}
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                document.getElementById('usersList').innerHTML = `
+                    <div class="text-center py-4 text-red-400">
+                        Connection error: ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/admin/stats');
+                const result = await response.json();
+                
+                if (response.ok) {
+                    const stats = result.stats;
+                    document.getElementById('statsContent').innerHTML = `
+                        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                            <div class="bg-gray-700 rounded-lg p-4 text-center">
+                                <div class="text-3xl font-bold text-primary-blue">${stats.total_users}</div>
+                                <div class="text-gray-300 text-sm">Total Users</div>
+                            </div>
+                            <div class="bg-gray-700 rounded-lg p-4 text-center">
+                                <div class="text-3xl font-bold text-admin-purple">${stats.admin_users}</div>
+                                <div class="text-gray-300 text-sm">Administrators</div>
+                            </div>
+                            <div class="bg-gray-700 rounded-lg p-4 text-center">
+                                <div class="text-3xl font-bold text-accent-green">${stats.regular_users}</div>
+                                <div class="text-gray-300 text-sm">Regular Users</div>
+                            </div>
+                            <div class="bg-gray-700 rounded-lg p-4 text-center">
+                                <div class="text-3xl font-bold text-yellow-400">${stats.total_weather_queries}</div>
+                                <div class="text-gray-300 text-sm">Weather Queries</div>
+                            </div>
+                            <div class="bg-gray-700 rounded-lg p-4 text-center">
+                                <div class="text-3xl font-bold text-purple-400">${stats.unique_cities_queried || 0}</div>
+                                <div class="text-gray-300 text-sm">Cities Queried</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <div class="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg">
+                                <span class="w-2 h-2 bg-green-300 rounded-full mr-2"></span>
+                                System ${stats.system_status}
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    document.getElementById('statsContent').innerHTML = `
+                        <div class="text-center py-4 text-red-400">
+                            Error loading statistics: ${result.error}
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                document.getElementById('statsContent').innerHTML = `
+                    <div class="text-center py-4 text-red-400">
+                        Connection error: ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        function showAddUserForm() {
+            const modal = createModal('Add User', `
+                <form id="addUserForm" class="space-y-4">
+                    <div>
+                        <label class="block text-gray-300 text-sm font-semibold mb-2">Username</label>
+                        <input type="text" id="newUsername" required
+                               class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-primary-blue">
+                    </div>
+                    <div>
+                        <label class="block text-gray-300 text-sm font-semibold mb-2">Password</label>
+                        <input type="password" id="newPassword" required
+                               class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-primary-blue">
+                    </div>
+                    <div>
+                        <label class="block text-gray-300 text-sm font-semibold mb-2">User Type</label>
+                        <select id="newUserType" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-primary-blue">
+                            <option value="regular">Regular User</option>
+                            <option value="admin">Administrator</option>
+                        </select>
+                    </div>
+                    <div class="flex justify-end space-x-2">
+                        <button type="button" onclick="closeModal()" class="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors">
+                            Cancel
+                        </button>
+                        <button type="submit" class="px-4 py-2 bg-admin-purple text-white rounded-lg hover:bg-admin-hover-purple transition-colors">
+                            Create User
+                        </button>
+                    </div>
+                </form>
+            `);
+            
+            document.getElementById('addUserForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const username = document.getElementById('newUsername').value;
+                const password = document.getElementById('newPassword').value;
+                const is_admin = document.getElementById('newUserType').value;
+                
+                try {
+                    const response = await fetch('/api/admin/users', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ username, password, is_admin })
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (response.ok) {
+                        alert('Usuário criado com sucesso!');
+                        closeModal();
+                        showUserManagement();
+                    } else {
+                        alert('Erro: ' + result.error);
+                    }
+                } catch (error) {
+                    alert('Erro de conexão: ' + error.message);
+                }
+            });
+        }
+
+        async function deleteUser(username) {
+            if (confirm(`Tem certeza que deseja deletar o usuário "${username}"?`)) {
+                try {
+                    const response = await fetch(`/api/admin/users/${username}`, {
+                        method: 'DELETE'
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (response.ok) {
+                        alert('Usuário deletado com sucesso!');
+                        loadUsers();
+                    } else {
+                        alert('Erro: ' + result.error);
+                    }
+                } catch (error) {
+                    alert('Erro de conexão: ' + error.message);
+                }
+            }
+        }
+
+        async function clearLogs() {
+            if (confirm('Tem certeza que deseja limpar todos os logs? Esta ação não pode ser desfeita.')) {
+                try {
+                    const response = await fetch('/api/admin/clear-logs', {
+                        method: 'POST'
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (response.ok) {
+                        alert('Logs limpos com sucesso!');
+                        closeModal();
+                    } else {
+                        alert('Erro: ' + result.error);
+                    }
+                } catch (error) {
+                    alert('Erro de conexão: ' + error.message);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast - Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#3B82F6',
+                        'accent-green': '#10B981',
+                        'accent-hover-green': '#059669',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-gray-800/50 backdrop-blur-sm border-b border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="{{ url_for('dashboard') }}" class="text-2xl font-bold text-white">
+                        🌤️ WeatherApp
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="{{ url_for('dashboard') }}" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                        Dashboard
+                    </a>
+                    <a href="{{ url_for('logs') }}" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                        Logs
+                    </a>
+                    <a href="{{ url_for('logout') }}" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">
+                Weather Forecast
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Get detailed weather forecasts for any city worldwide
+            </p>
+        </div>
+
+        <!-- Weather Form -->
+        <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 mb-8">
+            <form id="weatherForm" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <label for="city" class="block text-gray-300 text-sm font-semibold mb-2">City</label>
+                        <input type="text" id="city" required
+                               class="w-full px-4 py-3 bg-gray-700/50 backdrop-blur-sm border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all duration-200"
+                               placeholder="Enter city name">
+                    </div>
+                    <div>
+                        <label for="startDate" class="block text-gray-300 text-sm font-semibold mb-2">Start Date</label>
+                        <input type="date" id="startDate" required
+                               class="w-full px-4 py-3 bg-gray-700/50 backdrop-blur-sm border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all duration-200">
+                    </div>
+                    <div>
+                        <label for="endDate" class="block text-gray-300 text-sm font-semibold mb-2">End Date</label>
+                        <input type="date" id="endDate" required
+                               class="w-full px-4 py-3 bg-gray-700/50 backdrop-blur-sm border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all duration-200">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" id="submitBtn"
+                            class="px-8 py-4 bg-accent-green text-white font-bold rounded-lg shadow-lg hover:bg-accent-hover-green focus:outline-none focus:ring-2 focus:ring-accent-green focus:ring-offset-2 focus:ring-offset-gray-800 transition-all duration-200 transform hover:scale-105">
+                        🌤️ Get Weather Forecast
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="hidden text-center py-12">
+            <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-primary-blue mx-auto mb-4"></div>
+            <p class="text-gray-300 text-lg">Fetching weather data...</p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="hidden bg-red-600/20 border border-red-500/50 rounded-lg p-4 mb-8">
+            <div class="flex items-center">
+                <div class="text-red-400 text-xl mr-3">⚠️</div>
+                <div>
+                    <h3 class="text-red-300 font-semibold">Error</h3>
+                    <p id="errorText" class="text-red-200 text-sm mt-1"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weather Results -->
+        <div id="weatherResults" class="hidden">
+            <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 mb-6">
+                <h2 id="cityName" class="text-2xl font-bold text-white mb-4"></h2>
+                <div id="forecastContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Forecast cards will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default dates
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            const nextWeek = new Date(today);
+            nextWeek.setDate(nextWeek.getDate() + 7);
+
+            // Format dates as DD/MM/YYYY for display but keep YYYY-MM-DD for input
+            document.getElementById('startDate').value = tomorrow.toISOString().split('T')[0];
+            document.getElementById('endDate').value = nextWeek.toISOString().split('T')[0];
+
+            const weatherForm = document.getElementById('weatherForm');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            const errorMessage = document.getElementById('errorMessage');
+            const weatherResults = document.getElementById('weatherResults');
+            const submitBtn = document.getElementById('submitBtn');
+
+            weatherForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const city = document.getElementById('city').value;
+                const startDate = document.getElementById('startDate').value;
+                const endDate = document.getElementById('endDate').value;
+
+                // Show loading
+                loadingSpinner.classList.remove('hidden');
+                errorMessage.classList.add('hidden');
+                weatherResults.classList.add('hidden');
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Loading...';
+
+                try {
+                    const response = await fetch('/api/weather', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            city: city,
+                            start_date: startDate,
+                            end_date: endDate
+                        })
+                    });
+
+                    const result = await response.json();
+
+                    if (response.ok) {
+                        displayWeatherResults(result.forecasts, result.city);
+                    } else {
+                        showError(result.error);
+                    }
+                } catch (error) {
+                    showError('Failed to fetch weather data: ' + error.message);
+                } finally {
+                    loadingSpinner.classList.add('hidden');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = '🌤️ Get Weather Forecast';
+                }
+            });
+
+            function formatDate(dateString) {
+                // Convert YYYY-MM-DD to DD/MM/YYYY
+                const [year, month, day] = dateString.split('-');
+                return `${day}/${month}/${year}`;
+            }
+
+            function displayWeatherResults(forecasts, city) {
+                document.getElementById('cityName').textContent = `Weather Forecast for ${city}`;
+                
+                const container = document.getElementById('forecastContainer');
+                container.innerHTML = '';
+
+                forecasts.forEach(forecast => {
+                    const card = document.createElement('div');
+                    card.className = 'bg-gray-700/50 backdrop-blur-sm border border-gray-600 rounded-lg p-6 hover:bg-gray-700/70 transition-all duration-300';
+                    
+                    card.innerHTML = `
+                        <div class="text-center mb-4">
+                            <div class="text-3xl font-bold text-white mb-2">${formatDate(forecast.Date)}</div>
+                            <div class="text-4xl mb-3">🌤️</div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Average Temperature:</span>
+                                <span class="text-white font-semibold">${forecast['Average Temperature']}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Min Temperature:</span>
+                                <span class="text-blue-300 font-semibold">${forecast['Minimum Temperature']}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Max Temperature:</span>
+                                <span class="text-red-300 font-semibold">${forecast['Maximum Temperature']}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Condition:</span>
+                                <span class="text-yellow-300 font-semibold">${forecast['Weather Condition']}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Rain Probability:</span>
+                                <span class="text-blue-300 font-semibold">${forecast['Rain Probability']}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Humidity:</span>
+                                <span class="text-green-300 font-semibold">${forecast['Average Humidity']}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Sunrise:</span>
+                                <span class="text-orange-300 font-semibold">${forecast['Sunrise']}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Sunset:</span>
+                                <span class="text-purple-300 font-semibold">${forecast['Sunset']}</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Moon Phase:</span>
+                                <span class="text-indigo-300 font-semibold">${forecast['Moon Phase']}</span>
+                            </div>
+                        </div>
+                    `;
+                    
+                    container.appendChild(card);
+                });
+
+                weatherResults.classList.remove('hidden');
+            }
+
+            function showError(message) {
+                document.getElementById('errorText').textContent = message;
+                errorMessage.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
