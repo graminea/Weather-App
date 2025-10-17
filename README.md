@@ -1,6 +1,1 @@
-def aMamar():
-    Leu = True
-    if Leu:
-        return "Mamou"
-
-print(aMamar())
+Projeto futuro de uma interface web na branch better_overall
